@@ -8,6 +8,7 @@ Bu proje, araç fiyatlarını tahmin etmek amacıyla çeşitli makine öğrenimi
 - [Veri Ön İşleme](#veri-ön-işleme)
 - [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
 - [Kullanılan Modeller](#kullanılan-modeller)
+- [Flask API](#flask-api)
 - [Sonuçlar](#sonuçlar)
 
 ## Veri Seti İncelemesi
@@ -50,10 +51,10 @@ KNN modeli, en yakın komşulara göre tahmin yaparak araç fiyatlarını belirl
 ### XGBoost Regression
 XGBoost modeli, gradient boosting yöntemini kullanarak yüksek performanslı tahminler yapıldı.
 
-## Sonuçlar
+## Flask API
 
-Farklı modellerin performansları karşılaştırıldı ve en iyi sonuç veren model belirlendi. Sonuçlar, model doğruluğu ve hata oranları açısından değerlendirildi.
+Bu projede, araç fiyat tahminlerini dış dünyaya sunmak için bir Flask API kullanıldı. Flask, Python ile yazılmış hafif bir web uygulama çatısıdır ve bu proje için tahmin modellerinin entegre edildiği bir API sağladı.
 
----
+### Flask API Kullanımı
 
-Bu proje, araç fiyat tahmininde çeşitli makine öğrenimi tekniklerinin nasıl kullanılabileceğini göstermektedir. Daha detaylı bilgi ve kodlar için lütfen proje dosyalarını inceleyin.
+Flask API ile flutter üzerinde oluşturulan bir app ile local host üzerinden test edildi.
